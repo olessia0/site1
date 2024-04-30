@@ -1,0 +1,97 @@
+body{
+margin: 0;
+}
+h1{
+    font-size: 100px;
+}
+.korobka{
+    color: #E2F4C5;
+    padding: 0 100px;
+    text-align: center;
+    height: 100vh;
+    width: 50%;
+    margin: 0 15px 0 15px;
+}
+.hcenter{
+    align-items: center;
+}
+.wcenter{
+   justify-content: center; 
+}
+.dflex{
+    display: flex;
+    
+}
+.sectionHero{
+    background-color: #496989;
+}
+.prizrak{
+    position: absolute;
+    width: 80px;
+    left: 0px;
+}
+.t200{
+    top: 200px;
+
+}
+.t300{
+    top: 300px;
+
+}.t400{
+    top: 400px;
+
+}.t500{
+    top: 500px;
+
+}
+img{
+    width: 100%;
+    z-index: 6;
+}
+.krug{
+
+    rotate: 10deg;
+        z-index: 5;
+        position: absolute;
+        top: 180px;
+        height: 600px;
+        width: 600px;
+        left: calc(50% + 180px );
+        background-color: white
+    }
+.krug{
+    z-index: 5;
+    position: absolute;
+    border-radius: 100%;
+    top: 100px;
+    height: 800px;
+    width: 800px;
+    left: calc(50% + 100px );
+    background: rgb(140,51,127);
+    background: linear-gradient(90deg, rgba(140,51,127,1) 0%, rgba(34,203,195,1) 100%);
+}
+.btn{
+    background-color: black;
+    color: pink;
+    font-size: 50px;
+    text-decoration: none;
+    padding: 10px 30px;
+}
+.right{
+    position: absolute;
+        right: 80px;
+    }
+    .btn_krasiviy{
+        background-color: pink;
+        color: black;
+        padding: 7px 30px;
+        font-size: 30px;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+    .btn_krasiviy:hover{
+        background-color: rgb(255, 134, 154);
+        color: black;
+        box-shadow: 0 0 5px 5px rgb(129, 129, 129);
+        
+    }
