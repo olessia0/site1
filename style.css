@@ -69,8 +69,8 @@ img{
     height: 800px;
     width: 800px;
     left: calc(50% + 100px );
-    background: rgb(140,51,127);
-    background: linear-gradient(90deg, rgba(140,51,127,1) 0%, rgba(34,203,195,1) 100%);
+    background: rgb(33, 53, 85);
+    
 }
 .btn{
     background-color: black;
