@@ -1,42 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Lora);
-body {margin:0;}
-h2 {
-  font-family: monospace;
-  color: #606060;
-}
-ul {
-  list-style: none; 
-  margin: 0 auto;
-}
-a {
-  text-decoration: none;
-  font-family: 'Lora', serif;
-  transition: .5s linear;
-}
-i {
-  margin-right: 10px;
-}
-nav {
-  display: block;
-  width: 660px;
-  margin: 0 auto 30px;
-}
-.two ul {
-  background: #D4E7EE;
-  overflow: hidden;
-  padding: 0;
-}
-.two li {
-  float: left;
-}
-.two a {
-  display: block;
-  padding: 1em;
-  border-right: 1px solid #ADC0CE;
-  background: rgba(173, 192, 206, .3);
-  color: #29838C;
-}
-.two a:hover {background: #ADC0CE}
+body {
+  margin:0;
+     }
+
 h1{
     font-size: 100px;
 }
@@ -113,8 +78,31 @@ img{
     color: white;
     font-size: 50px;
     text-decoration: none;
-    padding: 0;
+    padding: 10px 30px;
 }
+nav{
+  height: 90px;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  background-color: #124e65;
+}
+.link{
+  font-size: 20px;
+  margin: 0 0 0 50px;
+  color: #b8915f;
+  cursor: pointer;
+  text-decoration: none;
+}
+.logo{
+  cursor: pointer;
+  font-size: 30px;
+  color: #f7f2e5;
+  font-weight: 600;
+  border: 1px solid #75b6d4;
+  padding: 10px 60px;
+}
+  
 .right{
     position: absolute;
         right: 10px;
