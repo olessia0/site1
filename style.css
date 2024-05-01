@@ -49,8 +49,9 @@ h1{
 }
 
 img{
-    width: 100%;
-    z-index: 5;
+  width: 80%;
+    z-index: 6;
+    box-shadow: 0 0 10px 10px white;
 }
 .krug{
 
