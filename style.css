@@ -50,7 +50,7 @@ h1{
 
 img{
     width: 100%;
-    z-index: 6;
+    z-index: 5;
 }
 .krug{
 
@@ -68,8 +68,8 @@ img{
     position: absolute;
     border-radius: 100%;
     top: 100px;
-    height: 800px;
-    width: 800px;
+    height: 700px;
+    width: 700px;
     background: rgb(33, 53, 85);
     
 }
