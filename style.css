@@ -183,6 +183,30 @@ nav{
 .sectionSkills{
     background-color: #FFFFFF;
 }
+.korobka4{
+    font-family: Arial;
+    color: #4F709C;
+    padding: 0 100px;
+    text-align: center;
+    height: 100vh;
+    width: 50%;
+    
+    margin: 0 15px 0 15px;
+}
+.hcenter{
+    align-items: center;
+}
+.wcenter{
+   justify-content: center; 
+}
+.dflex{
+    display: flex;
+    
+}
+.sectionBlog{
+    background-color: #F0F0F0;
+}
+
 
 
     
