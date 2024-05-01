@@ -68,7 +68,6 @@ img{
     top: 100px;
     height: 800px;
     width: 800px;
-    left: calc(50% + 100px );
     background: rgb(33, 53, 85);
     
 }
