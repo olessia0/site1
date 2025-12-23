@@ -107,10 +107,12 @@ audio { width: 300px; }
 
 /* IMAGES */
 img {
+  position: relative;
   max-width: 100%;
   height: auto;
-  margin: 20px auto;
   display: block;
+  margin: 20px auto;
+  
   z-index: 6;
 }
 
@@ -214,3 +216,4 @@ section { scroll-margin-top: 100px; }
     padding: 0 20px;
   }
 }
+
