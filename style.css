@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin:0;
   font-family: Arial, sans-serif;
 }
 
@@ -55,15 +55,9 @@ nav ul.menu li a {
   font-size: 20px;
 }
 
-/* Активный пункт меню */
-nav ul.menu li a.active {
-  color: #FFD700; /* золотой цвет */
-  font-weight: bold;
-}
-
 /* HERO */
 .sectionHero {
-  background-color: #f0f0f0;
+  background-color: #F0F0F0;
 }
 
 .korobka,
@@ -75,19 +69,20 @@ nav ul.menu li a.active {
   color: #4F709C;
   padding: 0 100px;
   text-align: center;
+  height: 100vh;
   width: 50%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 /* SECTIONS */
-.sectionAbout { background-color: #ffffff; }
-.sectionProjects { background-color: #f0f0f0; }
-.sectionSkills { background-color: #ffffff; }
-.sectionBlog { background-color: #f0f0f0; }
+.sectionAbout { background-color: #FFFFFF; }
+.sectionProjects { background-color: #F0F0F0; }
+.sectionSkills { background-color: #FFFFFF; }
+.sectionBlog { background-color: #F0F0F0; }
 
 /* BUTTON */
 .btn {
