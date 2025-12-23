@@ -1,5 +1,5 @@
 body {
-  margin:0;
+  margin: 0;
   font-family: Arial, sans-serif;
 }
 
@@ -55,11 +55,18 @@ nav ul.menu li a {
   font-size: 20px;
 }
 
+/* Активный пункт меню */
+nav ul.menu li a.active {
+  color: #FFD700; /* золотой цвет */
+  font-weight: bold;
+}
+
 /* HERO */
 .sectionHero {
   background-color: #F0F0F0;
 }
 
+/* KOROBKA */
 .korobka,
 .korobka1,
 .korobka2,
@@ -69,7 +76,6 @@ nav ul.menu li a {
   color: #4F709C;
   padding: 0 100px;
   text-align: center;
-  height: 100vh;
   width: 50%;
   margin: 0 auto;
   display: flex;
@@ -78,11 +84,16 @@ nav ul.menu li a {
   align-items: center;
 }
 
-/* SECTIONS */
+/* Секции */
 .sectionAbout { background-color: #FFFFFF; }
 .sectionProjects { background-color: #F0F0F0; }
 .sectionSkills { background-color: #FFFFFF; }
 .sectionBlog { background-color: #F0F0F0; }
+
+/* Для секций с изображениями высота под контент */
+.korobka2, .korobka4 {
+  height: auto;
+}
 
 /* BUTTON */
 .btn {
@@ -110,7 +121,10 @@ audio {
 
 /* IMAGES */
 img {
-  width: 90%;
+  max-width: 100%;   /* ширина не больше блока */
+  height: auto;      /* сохраняем пропорции */
+  display: block;
+  margin: 20px auto; /* центрируем и даем отступ сверху/снизу */
   z-index: 6;
 }
 
