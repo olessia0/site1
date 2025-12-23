@@ -60,7 +60,9 @@
         <h1>ABOUT ME</h1>
         <h2>
           I am a hard working, honest individual. I am a good timekeeper, always willing to learn new skills.
-          I am friendly, helpful and polite, have a good sense of humour.
+          I am friendly, helpful and polite, have a good sense of humour. I am able to work independently in busy
+          environments and also within a team setting. I am outgoing and tactful, and able to listen effectively 
+          when solving problems.
         </h2>
       </div>
     </div>
@@ -98,8 +100,10 @@
       <div>
         <h1>MY BLOG</h1>
         <h2>
-          Data Science has emerged as the quickest-growing job requirement globally,
-          experiencing over 650% growth since 2012.
+          As per LinkedIn's emerging jobs report, Data Science has emerged as the quickest-growing job requirement
+          globally, experiencing over 650% growth since 2012. As a result, the market for Data Science is predicted 
+          to surge from USD 37.9 billion in 2019 to reach an estimated USD 230.80 billion by 2026, showcasing a 
+          significant upward trajectory.
         </h2>
       </div>
     </div>
@@ -108,31 +112,6 @@
       <img src="dt.jpg" alt="blog image">
     </div>
   </section>
-
-  <!-- JS ДЛЯ АКТИВНОГО МЕНЮ -->
-  <script>
-    const menuLinks = document.querySelectorAll('nav ul.menu li a');
-    const sections = document.querySelectorAll('section');
-
-    function activateMenu() {
-      let scrollPos = window.scrollY + window.innerHeight / 2;
-
-      sections.forEach((section) => {
-        if (
-          scrollPos >= section.offsetTop &&
-          scrollPos < section.offsetTop + section.offsetHeight
-        ) {
-          menuLinks.forEach((link) => link.classList.remove('active'));
-          const id = section.getAttribute('id');
-          const activeLink = document.querySelector(`nav ul.menu li a[href="#${id}"]`);
-          if (activeLink) activeLink.classList.add('active');
-        }
-      });
-    }
-
-    window.addEventListener('scroll', activateMenu);
-    window.addEventListener('load', activateMenu);
-  </script>
 
 </body>
 </html>
