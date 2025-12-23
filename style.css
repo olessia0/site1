@@ -107,13 +107,16 @@ audio { width: 300px; }
 
 /* IMAGES */
 img {
-  position: relative;
   max-width: 100%;
   height: auto;
   display: block;
   margin: 20px auto;
-  
-  z-index: 6;
+}
+
+/* фото hero поверх круга */
+.sectionHero img {
+  position: relative;
+  z-index: 10;
 }
 
 /* DECOR */
@@ -171,6 +174,7 @@ img {
 .skills-table td {
   border: 2px solid #153448;
   padding: 12px;
+  text-align: center;
 }
 
 .skills-table th {
@@ -215,5 +219,5 @@ section { scroll-margin-top: 100px; }
     width: 100%;
     padding: 0 20px;
   }
+  .skills-table { font-size: 18px; }
 }
-
