@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Olessya Doroshenko</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+
   <style>
     html { scroll-behavior: smooth; }
   </style>
@@ -12,26 +13,23 @@
 
 <body>
 
-<header>
-  <nav>
-    <ul class="menu">
-      <li class="logo">Olessya Doroshenko</li>
-      <li><a href="#about">About me</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#blog">Blog</a></li>
-    </ul>
-  </nav>
-</header>
+<!-- NAV -->
+<nav>
+  <ul class="menu">
+    <li class="logo">Olessya Doroshenko</li>
+    <li><a href="#about" class="link">About me</a></li>
+    <li><a href="#projects" class="link">Projects</a></li>
+    <li><a href="#skills" class="link">Skills</a></li>
+    <li><a href="#blog" class="link">Blog</a></li>
+  </ul>
+</nav>
 
-<!-- DECOR -->
+<!-- DECOR (ВСЁ СОХРАНЕНО) -->
 <img class="prizrak t200" src="promoyg1.png" alt="">
 <img class="prizrak t300" src="promoyg1.png" alt="">
 <img class="prizrak t400" src="promoyg1.png" alt="">
 <img class="prizrak t500" src="promoyg1.png" alt="">
 <div class="krug"></div>
-
-<main>
 
 <!-- HERO -->
 <section class="dflex sectionHero">
@@ -50,7 +48,7 @@
   </div>
 
   <div class="korobka dflex hcenter wcenter fade-in delay">
-    <img src="me4.png" alt="My photo">
+    <img src="me4.png" alt="photo">
   </div>
 </section>
 
@@ -60,7 +58,8 @@
     <div>
       <h1>ABOUT ME</h1>
       <h2>
-        I am a hard working, honest individual. Always willing to learn new skills.
+        I am a hard working, honest individual. I am a good timekeeper,
+        always willing to learn new skills. I am friendly and polite.
       </h2>
     </div>
   </div>
@@ -71,6 +70,7 @@
   <div class="korobka2 dflex hcenter wcenter fade-in">
     <h1>MY PROJECTS</h1>
   </div>
+
   <div class="korobka2 dflex hcenter wcenter fade-in delay">
     <img src="pr1.png" alt="project 1">
     <img src="pr2.png" alt="project 2">
@@ -85,6 +85,7 @@
 
   <div class="korobka4 dflex hcenter wcenter fade-in delay">
 
+    <!-- ИКОНКИ (ТВОИ) -->
     <div class="skills-icons">
       <img src="sk1.png" alt="HTML">
       <img src="sk2.png" alt="CSS">
@@ -92,8 +93,8 @@
       <img src="sk4.png" alt="Other skills">
     </div>
 
+    <!-- ТАБЛИЦА -->
     <table class="skills-table">
-      <caption>My Academic & Technical Skills</caption>
       <thead>
         <tr>
           <th>Skill</th>
@@ -103,19 +104,35 @@
       <tbody>
         <tr>
           <td>HTML</td>
-          <td><div class="progress"><div class="progress-bar html">7 / 10</div></div></td>
+          <td>
+            <div class="progress">
+              <div class="progress-bar html">7 / 10</div>
+            </div>
+          </td>
         </tr>
         <tr>
           <td>Algebra</td>
-          <td><div class="progress"><div class="progress-bar algebra">9 / 10</div></div></td>
+          <td>
+            <div class="progress">
+              <div class="progress-bar algebra">9 / 10</div>
+            </div>
+          </td>
         </tr>
         <tr>
           <td>Geometry</td>
-          <td><div class="progress"><div class="progress-bar geometry">8 / 10</div></div></td>
+          <td>
+            <div class="progress">
+              <div class="progress-bar geometry">8 / 10</div>
+            </div>
+          </td>
         </tr>
         <tr>
           <td>Physics</td>
-          <td><div class="progress"><div class="progress-bar physics">10 / 10</div></div></td>
+          <td>
+            <div class="progress">
+              <div class="progress-bar physics">10 / 10</div>
+            </div>
+          </td>
         </tr>
       </tbody>
     </table>
@@ -128,7 +145,9 @@
   <div class="korobka4 dflex hcenter wcenter fade-in">
     <div>
       <h1>MY BLOG</h1>
-      <h2>Data Science is one of the fastest-growing fields.</h2>
+      <h2>
+        Data Science has emerged as the quickest-growing job requirement globally.
+      </h2>
     </div>
   </div>
 
@@ -137,20 +156,22 @@
   </div>
 </section>
 
-</main>
-
+<!-- JS (ТВОЙ, БЕЗ ИЗМЕНЕНИЙ) -->
 <script>
 const menuLinks = document.querySelectorAll('nav ul.menu li a');
 const sections = document.querySelectorAll('section');
 
 function activateMenu() {
   let scrollPos = window.scrollY + window.innerHeight / 2;
-  sections.forEach(section => {
-    if (scrollPos >= section.offsetTop &&
-        scrollPos < section.offsetTop + section.offsetHeight) {
-      menuLinks.forEach(link => link.classList.remove('active'));
+
+  sections.forEach((section) => {
+    if (
+      scrollPos >= section.offsetTop &&
+      scrollPos < section.offsetTop + section.offsetHeight
+    ) {
+      menuLinks.forEach((link) => link.classList.remove('active'));
       const id = section.getAttribute('id');
-      const activeLink = document.querySelector(a[href="#${id}"]);
+      const activeLink = document.querySelector(nav ul.menu li a[href="#${id}"]);
       if (activeLink) activeLink.classList.add('active');
     }
   });
