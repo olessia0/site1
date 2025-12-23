@@ -1,105 +1,117 @@
 <!DOCTYPE html>
-<html>
-<head> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Olessya Doroshenko</title>
+  <link rel="stylesheet" href="style.css">
 
-<title>About me</title>
+  <!-- плавный скролл -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
 <body>
-  <nav>
-    <li class="logo">Olessya Doroshenko</li>
-<li href="#aboutme" class="link">About me</li>
-   <li href="#progects" class="link">Projects</li>
-    <li href="#skills" class="link">Skills</li>
-    <li href="#blog" class="link">Blog</li>
-    
 
+  <!-- NAVIGATION -->
+  <nav>
+    <ul>
+      <li class="logo">Olessya Doroshenko</li>
+      <li><a href="#about" class="link">About me</a></li>
+      <li><a href="#projects" class="link">Projects</a></li>
+      <li><a href="#skills" class="link">Skills</a></li>
+      <li><a href="#blog" class="link">Blog</a></li>
+    </ul>
   </nav>
 
-  </head>
+  <!-- DECOR -->
+  <img class="prizrak t200" src="promoyg1.png">
+  <img class="prizrak t300" src="promoyg1.png">
+  <img class="prizrak t400" src="promoyg1.png">
+  <img class="prizrak t500" src="promoyg1.png">
+  <div class="krug"></div>
 
-    <link rel="stylesheet" href="style.css">
-    
-
-<img class="prizrak t200" src="promoyg1.png">
-    <img class="prizrak t300" src="promoyg1.png">
-    <img class="prizrak t400" src="promoyg1.png">
-    <img class="prizrak t500" src="promoyg1.png">
-    <div class="krug"></div>
-    <section class="dflex sectionHero">
-      <a class="logo">Olessya Doroshenko</a>
-        <div class="korobka dflex hcenter wcenter">
-            <div>
-              
-                <h1>I'm Olessya Doroshenko</h1>
-
-  
-    
-                <a class="btn" href="https://www.instagram.com/skemi.ol/">Contact me</a>
-            </div>
-        </div>
-        <div class="korobka  dflex hcenter wcenter">
-            <img src="kotik.jfif">
-        </div>
-    </section>
-  <section class="dflex sectionAbout me">
-    <div class="korobka1 dflex hcenter wcenter">
-      
+  <!-- HERO -->
+  <section class="dflex sectionHero">
+    <div class="korobka dflex hcenter wcenter">
       <div>
-        
-      <h1>ABOUT ME</h1>
-        <h2>I am a hard working, honest individual. I am a good timekeeper, always willing to learn new skills.
-          I am friendly, helpful and polite, have a good sense of humour. I am able to work independently in busy
-          environments and also within a team setting. I am outgoing and tactful, and able to listen effectively 
-          when solving problems.</h2>
-       
-   </div>
+        <h1>I'm Olessya Doroshenko</h1>
+        <a class="btn" href="https://www.instagram.com/skemi.ol/">Contact me</a>
       </div>
-      
-    </section>  
+    </div>
 
-  <section class="dflex sectionProjects">
+    <div class="korobka dflex hcenter wcenter">
+      <img src="kotik.jfif" alt="photo">
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="dflex sectionAbout">
+    <div class="korobka1 dflex hcenter wcenter">
+      <div>
+        <h1>ABOUT ME</h1>
+        <h2>
+          I am a hard working, honest individual. I am a good timekeeper, always willing to learn new skills.
+          I am friendly, helpful and polite, have a good sense of humour. I am able to work independently in busy
+          environments and also within a team setting.
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="dflex sectionProjects">
     <div class="korobka2 dflex hcenter wcenter">
       <div>
-       <h1>MY PROJECTS</h1>
+        <h1>MY PROJECTS</h1>
       </div>
     </div>
-        <div class="korobka2  dflex hcenter wcenter">
-          <img src="pr1.png">
-          <img src="pr2.png">
-      </div>
-      </section>     
-   <section class="dflex sectionSkills">
+
+    <div class="korobka2 dflex hcenter wcenter">
+      <img src="pr1.png" alt="project 1">
+      <img src="pr2.png" alt="project 2">
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="dflex sectionSkills">
     <div class="korobka3 dflex hcenter wcenter">
       <div>
-       <h1>MY SKILLS</h1>
-        
+        <h1>MY SKILLS</h1>
       </div>
     </div>
-        <div class="korobka4  dflex hcenter wcenter">
-          <img src="sk1.png">            
-          <img src="sk2.png>
-          <img src="sk3.png">            
-          <img src="sk4.png>
-      </div>
-      </section>  
-            <section class="dflex sectionBlog">
+
+    <div class="korobka4 dflex hcenter wcenter">
+      <img src="sk1.png" alt="skill 1">
+      <img src="sk2.png" alt="skill 2">
+      <img src="sk3.png" alt="skill 3">
+      <img src="sk4.png" alt="skill 4">
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section id="blog" class="dflex sectionBlog">
     <div class="korobka4 dflex hcenter wcenter">
       <div>
-       <h1>MY BLOG</h1>
-        <h2>As per LinkedIn's emerging jobs report, Data Science has emerged as the quickest-growing job requirement
-          globally, experiencing over 650% growth since 2012. As a result, the market for Data Science is predicted 
-          to surge from USD 37.9 billion in 2019 to reach an estimated USD 230.80 billion by 2026, showcasing a 
-          significant upward trajectory.</h2>
+        <h1>MY BLOG</h1>
+        <h2>
+          As per LinkedIn's emerging jobs report, Data Science has emerged as the quickest-growing job requirement
+          globally, experiencing over 650% growth since 2012.
+        </h2>
       </div>
     </div>
-        <div class="korobka4  dflex hcenter wcenter">
-          <img src="dt.jpg"
-      </div>
-      </section>     
-            
 
-  
+    <div class="korobka4 dflex hcenter wcenter">
+      <img src="dt.jpg" alt="blog image">
+    </div>
+  </section>
+
 </body>
 </html>
+
+
 
 
 
