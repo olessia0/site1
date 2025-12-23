@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: Arial, sans-serif;
 }
 
 /* HEADINGS */
@@ -27,26 +28,37 @@ nav {
   background-color: #153448;
 }
 
-nav ul {
+nav ul.menu {
   display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
+  align-items: center;
 }
 
-.link {
-  font-size: 20px;
+nav ul.menu li {
   margin-left: 50px;
-  color: #ffffff;
-  text-decoration: none;
 }
 
-.logo {
+nav ul.menu li.logo {
+  margin-left: 0;
   font-size: 30px;
   color: #f7f2e5;
   font-weight: 600;
   border: 1px solid #75b6d4;
   padding: 10px 60px;
+}
+
+nav ul.menu li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+/* Активный пункт меню */
+nav ul.menu li a.active {
+  color: #FFD700; /* золотой цвет */
+  font-weight: bold;
 }
 
 /* HERO */
@@ -63,28 +75,19 @@ nav ul {
   color: #4F709C;
   padding: 0 100px;
   text-align: center;
-  height: 100vh;
   width: 50%;
-  margin: 0 15px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* центр по вертикали */
-  align-items: center;    /* центр по горизонтали */
+  align-items: center;
+  justify-content: center;
 }
 
 /* SECTIONS */
-.sectionAbout {
-  background-color: #ffffff;
-}
-.sectionProjects {
-  background-color: #f0f0f0;
-}
-.sectionSkills {
-  background-color: #ffffff;
-}
-.sectionBlog {
-  background-color: #f0f0f0;
-}
+.sectionAbout { background-color: #ffffff; }
+.sectionProjects { background-color: #f0f0f0; }
+.sectionSkills { background-color: #ffffff; }
+.sectionBlog { background-color: #f0f0f0; }
 
 /* BUTTON */
 .btn {
@@ -140,7 +143,5 @@ img {
 
 /* OFFSET ДЛЯ ЯКОРОЙ */
 section {
-  scroll-margin-top: 100px; /* чтобы nav не перекрывал контент */
+  scroll-margin-top: 100px;
 }
-
-
