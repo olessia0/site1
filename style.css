@@ -1,212 +1,139 @@
 body {
-  margin:0;
-     }
-
-h1{
-    font-size: 100px;
-}
-.korobka{
-    font-family: Arial;
-    color: #4F709C;
-    padding: 0 100px;
-    text-align: center;
-    height: 100vh;
-    width: 50%;
-    
-    margin: 0 15px 0 15px;
-}
-.hcenter{
-    align-items: center;
-}
-.wcenter{
-   justify-content: center; 
-}
-.dflex{
-    display: flex;
-    
-}
-.sectionHero{
-    background-color: #F0F0F0;
-}
-.prizrak{
-    position: absolute;
-    width: 80px;
-    left: 0px;
-}
-.t200{
-    top: 200px;
-
-
-
-  
-
-}
-.t300{
-    top: 300px;
-
-}.t400{
-    top: 400px;
-
-}.t500{
-    top: 500px;
-
+  margin: 0;
 }
 
-img{
-  width: 90%;
-    z-index: 6;
-  
-   
+h1 {
+  font-size: 100px;
 }
-.krug{
 
-    rotate: 10deg;
-        z-index: 5;
-        position: absolute;
-        top: 180px;
-        height: 600px;
-        width: 600px;
-        left: calc(50% + 180px );
-        background-color: white
-    }
-.krug{
-    z-index: 5;
-    position: absolute;
-    border-radius: 100%;
-    top: 100px;
-    height: 700px;
-    width: 700px;
-    background: rgb(33, 53, 85);
-    
+/* FLEX */
+.dflex {
+  display: flex;
 }
-.btn{
-    background-color: black;
-    color: white;
-    font-size: 50px;
-    text-decoration: none;
-    padding: 10px 30px;
+.hcenter {
+  align-items: center;
 }
-nav{
+.wcenter {
+  justify-content: center;
+}
+
+/* NAV */
+nav {
   height: 90px;
   display: flex;
   align-items: center;
   padding-left: 50px;
   background-color: #153448;
 }
-.link{
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
   font-size: 20px;
-  margin: 0 0 0 50px;
-  color: #FFFFFF;
-  cursor: pointer;
+  margin-left: 50px;
+  color: #ffffff;
   text-decoration: none;
 }
-.logo{
-  cursor: pointer;
+
+.logo {
   font-size: 30px;
   color: #f7f2e5;
   font-weight: 600;
   border: 1px solid #75b6d4;
   padding: 10px 60px;
 }
-  
-.right{
-    position: absolute;
-        right: 10px;
-    }
 
-.korobka1{
-    font-family: Arial;
-    color: #4F709C;
-    padding: 0 100px;
-    text-align: center;
-    height: 100vh;
-    width: 50%;
-    
-    margin: 0 15px 0 15px;
+/* HERO */
+.sectionHero {
+  background-color: #f0f0f0;
 }
-.hcenter{
-    align-items: center;
+
+.korobka,
+.korobka1,
+.korobka2,
+.korobka3,
+.korobka4 {
+  font-family: Arial;
+  color: #4F709C;
+  padding: 0 100px;
+  text-align: center;
+  height: 100vh;
+  width: 50%;
 }
-.wcenter{
-   justify-content: center; 
+
+/* SECTIONS */
+.sectionAbout {
+  background-color: #ffffff;
 }
-.dflex{
-    display: flex;
-    
+.sectionProjects {
+  background-color: #f0f0f0;
 }
-.sectionAbout me{
-    background-color: #FFFFFF;
+.sectionSkills {
+  background-color: #ffffff;
 }
-.korobka2{
-    font-family: Arial;
-    color: #4F709C;
-    padding: 0 100px;
-    text-align: center;
-    height: 100vh;
-    width: 50%;
-    
-    margin: 0 15px 0 15px;
+.sectionBlog {
+  background-color: #f0f0f0;
 }
-.hcenter{
-    align-items: center;
+
+/* BUTTON */
+.btn {
+  background-color: black;
+  color: white;
+  font-size: 50px;
+  text-decoration: none;
+  padding: 10px 30px;
+  display: inline-block;
+  margin-top: 20px;
 }
-.wcenter{
-   justify-content: center; 
+
+/* AUDIO */
+.audio-player {
+  margin-top: 40px;
 }
-.dflex{
-    display: flex;
-    
+
+.audio-player p {
+  font-size: 20px;
 }
-.sectionProjects{
-    background-color: #F0F0F0;
+
+audio {
+  width: 300px;
 }
-.korobka3{
-    font-family: Arial;
-    color: #4F709C;
-    padding: 0 100px;
-    text-align: center;
-    height: 100vh;
-    width: 50%;
-    
-    margin: 0 15px 0 15px;
+
+/* IMAGES */
+img {
+  width: 90%;
+  z-index: 6;
 }
-.hcenter{
-    align-items: center;
+
+/* DECOR */
+.prizrak {
+  position: absolute;
+  width: 80px;
+  left: 0;
 }
-.wcenter{
-   justify-content: center; 
-}
-.dflex{
-    display: flex;
-    
-}
-.sectionSkills{
-    background-color: #FFFFFF;
-}
-.korobka4{
-    font-family: Arial;
-    color: #4F709C;
-    padding: 0 100px;
-    text-align: center;
-    height: 100vh;
-    width: 50%;
-    
-    margin: 0 15px 0 15px;
-}
-.hcenter{
-    align-items: center;
-}
-.wcenter{
-   justify-content: center; 
-}
-.dflex{
-    display: flex;
-    
-}
-.sectionBlog{
-    background-color: #F0F0F0;
+
+.t200 { top: 200px; }
+.t300 { top: 300px; }
+.t400 { top: 400px; }
+.t500 { top: 500px; }
+
+.krug {
+  position: absolute;
+  top: 100px;
+  left: calc(50% + 180px);
+  height: 700px;
+  width: 700px;
+  border-radius: 50%;
+  background: rgb(33, 53, 85);
+  z-index: 5;
 }
 
 
 
     
+
