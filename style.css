@@ -1,8 +1,3 @@
-/* RESET */
-* {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -11,24 +6,12 @@ body {
 /* HEADINGS */
 h1 {
   font-size: 100px;
-  margin: 0;
-}
-
-h2 {
-  font-size: 32px;
-  font-weight: normal;
 }
 
 /* FLEX */
-.dflex {
-  display: flex;
-}
-.hcenter {
-  align-items: center;
-}
-.wcenter {
-  justify-content: center;
-}
+.dflex { display: flex; }
+.hcenter { align-items: center; }
+.wcenter { justify-content: center; }
 
 /* NAV */
 nav {
@@ -50,9 +33,7 @@ nav ul.menu {
   align-items: center;
 }
 
-nav ul.menu li {
-  margin-left: 50px;
-}
+nav ul.menu li { margin-left: 50px; }
 
 nav ul.menu li.logo {
   margin-left: 0;
@@ -77,9 +58,7 @@ nav ul.menu li a.active {
 }
 
 /* HERO */
-.sectionHero {
-  background-color: #F0F0F0;
-}
+.sectionHero { background-color: #F0F0F0; }
 
 /* KOROBKA */
 .korobka,
@@ -87,7 +66,6 @@ nav ul.menu li a.active {
 .korobka2,
 .korobka3,
 .korobka4 {
-  font-family: Arial;
   color: #4F709C;
   padding: 0 100px;
   text-align: center;
@@ -113,7 +91,6 @@ nav ul.menu li a.active {
   font-size: 50px;
   text-decoration: none;
   padding: 10px 30px;
-  display: inline-block;
   margin-top: 20px;
   transition: 0.3s;
 }
@@ -124,24 +101,16 @@ nav ul.menu li a.active {
 }
 
 /* AUDIO */
-.audio-player {
-  margin-top: 40px;
-}
-
-.audio-player p {
-  font-size: 20px;
-}
-
-audio {
-  width: 300px;
-}
+.audio-player { margin-top: 40px; }
+.audio-player p { font-size: 20px; }
+audio { width: 300px; }
 
 /* IMAGES */
 img {
   max-width: 100%;
   height: auto;
-  display: block;
   margin: 20px auto;
+  display: block;
   z-index: 6;
 }
 
@@ -160,37 +129,26 @@ img {
   position: absolute;
   top: 100px;
   left: calc(50% + 180px);
-  height: 700px;
   width: 700px;
+  height: 700px;
   border-radius: 50%;
   background: rgb(33, 53, 85);
   z-index: 5;
 }
 
-/* OFFSET */
-section {
-  scroll-margin-top: 100px;
-}
-
-/* FADE IN */
+/* ANIMATION */
 .fade-in {
   opacity: 0;
   transform: translateY(30px);
   animation: fadeUp 1s forwards;
 }
-
-.delay {
-  animation-delay: 0.4s;
-}
+.delay { animation-delay: 0.4s; }
 
 @keyframes fadeUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-/* SKILLS ICONS */
+/* SKILLS */
 .skills-icons {
   display: flex;
   gap: 20px;
@@ -198,27 +156,19 @@ section {
   justify-content: center;
 }
 
-/* SKILLS TABLE */
+/* TABLE */
 .skills-table {
-  border-collapse: collapse;
   width: 100%;
   max-width: 600px;
+  border-collapse: collapse;
   margin-top: 40px;
   font-size: 22px;
-}
-
-.skills-table caption {
-  font-size: 26px;
-  font-weight: bold;
-  margin-bottom: 15px;
-  color: #153448;
 }
 
 .skills-table th,
 .skills-table td {
   border: 2px solid #153448;
   padding: 12px;
-  text-align: center;
 }
 
 .skills-table th {
@@ -226,9 +176,9 @@ section {
   color: white;
 }
 
-/* PROGRESS BAR */
+/* PROGRESS */
 .progress {
-  background-color: #ddd;
+  background: #ddd;
   border-radius: 20px;
   overflow: hidden;
 }
@@ -237,47 +187,24 @@ section {
   height: 35px;
   line-height: 35px;
   font-weight: bold;
-  animation: load 2s ease forwards;
+  animation: load 2s forwards;
 }
 
-.progress-bar.html {
-  width: 70%;
-  background: #4F709C;
-  color: white;
-}
-
-.progress-bar.algebra {
-  width: 90%;
-  background: #153448;
-  color: white;
-}
-
-.progress-bar.geometry {
-  width: 80%;
-  background: #5A7DA0;
-  color: white;
-}
-
-.progress-bar.physics {
-  width: 100%;
-  background: #FFD700;
-  color: black;
-}
+.progress-bar.html { width: 70%; background: #4F709C; color: white; }
+.progress-bar.algebra { width: 90%; background: #153448; color: white; }
+.progress-bar.geometry { width: 80%; background: #5A7DA0; color: white; }
+.progress-bar.physics { width: 100%; background: #FFD700; color: black; }
 
 @keyframes load {
   from { width: 0; }
 }
 
+/* OFFSET */
+section { scroll-margin-top: 100px; }
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
-  h1 {
-    font-size: 50px;
-  }
-
-  nav ul.menu {
-    flex-wrap: wrap;
-  }
-
+  h1 { font-size: 50px; }
   .korobka,
   .korobka1,
   .korobka2,
