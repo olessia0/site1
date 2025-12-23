@@ -66,7 +66,7 @@ nav ul.menu li a.active {
   background-color: #F0F0F0;
 }
 
-/* KOROBKA */
+/* KOROBKA - одинаковая высота всех секций */
 .korobka,
 .korobka1,
 .korobka2,
@@ -80,8 +80,9 @@ nav ul.menu li a.active {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* центрируем по вертикали */
+  align-items: center;     /* центрируем по горизонтали */
+  min-height: 100vh;       /* каждая секция = высота экрана */
 }
 
 /* Секции */
@@ -89,11 +90,6 @@ nav ul.menu li a.active {
 .sectionProjects { background-color: #F0F0F0; }
 .sectionSkills { background-color: #FFFFFF; }
 .sectionBlog { background-color: #F0F0F0; }
-
-/* Для секций с изображениями высота под контент */
-.korobka2, .korobka4 {
-  height: auto;
-}
 
 /* BUTTON */
 .btn {
