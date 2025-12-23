@@ -24,16 +24,9 @@
     </ul>
   </nav>
 
-  <!-- DECOR -->
-  <img class="prizrak t200" src="promoyg1.png">
-  <img class="prizrak t300" src="promoyg1.png">
-  <img class="prizrak t400" src="promoyg1.png">
-  <img class="prizrak t500" src="promoyg1.png">
-  <div class="krug"></div>
-
   <!-- HERO -->
   <section class="dflex sectionHero">
-    <div class="korobka dflex hcenter wcenter">
+    <div class="korobka dflex hcenter wcenter fade-in">
       <div>
         <h1>I'm Olessya Doroshenko</h1>
         <a class="btn" href="https://www.instagram.com/skemi.ol/">Contact me</a>
@@ -47,29 +40,23 @@
         </div>
       </div>
     </div>
-
-    <div class="korobka dflex hcenter wcenter">
-      <img src="kotik.jfif" alt="photo">
-    </div>
   </section>
 
   <!-- ABOUT -->
-  <section id="about" class="dflex sectionAbout">
+  <section id="about" class="dflex sectionAbout fade-in">
     <div class="korobka1 dflex hcenter wcenter">
       <div>
         <h1>ABOUT ME</h1>
         <h2>
-          I am a hard working, honest individual. I am a good timekeeper, always willing to learn new skills.
-          I am friendly, helpful and polite, have a good sense of humour. I am able to work independently in busy
-          environments and also within a team setting. I am outgoing and tactful, and able to listen effectively 
-          when solving problems.
+          I am a hard working, honest individual. I am good at keeping time and learning new skills.
+          I am friendly, helpful and polite, with a good sense of humour.
         </h2>
       </div>
     </div>
   </section>
 
   <!-- PROJECTS -->
-  <section id="projects" class="dflex sectionProjects">
+  <section id="projects" class="dflex sectionProjects fade-in">
     <div class="korobka2 dflex hcenter wcenter">
       <h1>MY PROJECTS</h1>
     </div>
@@ -81,37 +68,56 @@
   </section>
 
   <!-- SKILLS -->
-  <section id="skills" class="dflex sectionSkills">
+  <section id="skills" class="dflex sectionSkills fade-in">
     <div class="korobka3 dflex hcenter wcenter">
       <h1>MY SKILLS</h1>
-    </div>
-
-    <div class="korobka4 dflex hcenter wcenter">
-      <img src="sk1.png" alt="skill 1">
-      <img src="sk2.png" alt="skill 2">
-      <img src="sk3.png" alt="skill 3">
-      <img src="sk4.png" alt="skill 4">
+      <ul class="skills-list">
+        <li>✅ Excellent Mathematics</li>
+        <li>✅ Strong Physics knowledge</li>
+        <li>✅ Advanced English skills</li>
+        <li>✅ Problem-solving and logical thinking</li>
+        <li>✅ Quick learning and adaptability</li>
+      </ul>
     </div>
   </section>
 
   <!-- BLOG -->
-  <section id="blog" class="dflex sectionBlog">
+  <section id="blog" class="dflex sectionBlog fade-in">
     <div class="korobka4 dflex hcenter wcenter">
       <div>
         <h1>MY BLOG</h1>
         <h2>
-          As per LinkedIn's emerging jobs report, Data Science has emerged as the quickest-growing job requirement
-          globally, experiencing over 650% growth since 2012. As a result, the market for Data Science is predicted 
-          to surge from USD 37.9 billion in 2019 to reach an estimated USD 230.80 billion by 2026, showcasing a 
-          significant upward trajectory.
+          Data Science has emerged as the quickest-growing job requirement globally,
+          experiencing over 650% growth since 2012.
         </h2>
       </div>
     </div>
-
-    <div class="korobka4 dflex hcenter wcenter">
-      <img src="dt.jpg" alt="blog image">
-    </div>
   </section>
+
+  <!-- JS ДЛЯ АКТИВНОГО МЕНЮ -->
+  <script>
+    const menuLinks = document.querySelectorAll('nav ul.menu li a');
+    const sections = document.querySelectorAll('section');
+
+    function activateMenu() {
+      let scrollPos = window.scrollY + window.innerHeight / 2;
+
+      sections.forEach((section) => {
+        if (
+          scrollPos >= section.offsetTop &&
+          scrollPos < section.offsetTop + section.offsetHeight
+        ) {
+          menuLinks.forEach((link) => link.classList.remove('active'));
+          const id = section.getAttribute('id');
+          const activeLink = document.querySelector(`nav ul.menu li a[href="#${id}"]`);
+          if (activeLink) activeLink.classList.add('active');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', activateMenu);
+    window.addEventListener('load', activateMenu);
+  </script>
 
 </body>
 </html>
