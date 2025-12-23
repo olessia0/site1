@@ -1,12 +1,11 @@
 body {
-  margin:0;
+  margin: 0;
   font-family: Arial, sans-serif;
 }
 
 /* HEADINGS */
 h1 {
-  font-size: 80px;
-  margin-bottom: 20px;
+  font-size: 100px;
 }
 
 /* FLEX */
@@ -27,9 +26,6 @@ nav {
   align-items: center;
   padding-left: 50px;
   background-color: #153448;
-  position: sticky;
-  top: 0;
-  z-index: 10;
 }
 
 nav ul.menu {
@@ -51,22 +47,12 @@ nav ul.menu li.logo {
   font-weight: 600;
   border: 1px solid #75b6d4;
   padding: 10px 60px;
-  transition: transform 0.3s;
-}
-
-nav ul.menu li.logo:hover {
-  transform: scale(1.05);
 }
 
 nav ul.menu li a {
   text-decoration: none;
   color: #ffffff;
   font-size: 20px;
-  transition: color 0.3s;
-}
-
-nav ul.menu li a:hover {
-  color: #FFD700;
 }
 
 /* Активный пункт меню */
@@ -94,18 +80,9 @@ nav ul.menu li a.active {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 1s ease, transform 1s ease;
-}
-
-/* fade-in при скролле */
-.korobka.fade-in {
-  opacity: 1;
-  transform: translateY(0);
+  justify-content: center; /* центрируем по вертикали */
+  align-items: center;     /* центрируем по горизонтали */
+  min-height: 100vh;       /* каждая секция = высота экрана */
 }
 
 /* Секции */
@@ -123,12 +100,6 @@ nav ul.menu li a.active {
   padding: 10px 30px;
   display: inline-block;
   margin-top: 20px;
-  transition: transform 0.3s, background-color 0.3s;
-}
-
-.btn:hover {
-  background-color: #333;
-  transform: scale(1.05);
 }
 
 /* AUDIO */
@@ -146,10 +117,10 @@ audio {
 
 /* IMAGES */
 img {
-  max-width: 100%;   
-  height: auto;      
+  max-width: 100%;   /* ширина не больше блока */
+  height: auto;      /* сохраняем пропорции */
   display: block;
-  margin: 20px auto; 
+  margin: 20px auto; /* центрируем и даем отступ сверху/снизу */
   z-index: 6;
 }
 
@@ -178,27 +149,4 @@ img {
 /* OFFSET ДЛЯ ЯКОРОЙ */
 section {
   scroll-margin-top: 100px;
-}
-
-/* Секция Skills */
-.skills-list {
-  list-style: none;
-  padding: 0;
-  font-size: 28px;
-  text-align: left;
-  margin-top: 20px;
-}
-
-.skills-list li {
-  margin-bottom: 15px;
-  position: relative;
-  padding-left: 35px;
-}
-
-.skills-list li::before {
-  content: "✔";
-  position: absolute;
-  left: 0;
-  color: #4F709C;
-  font-weight: bold;
 }
